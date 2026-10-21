@@ -18,11 +18,21 @@ Simular a rotina de uma **Analista de Gestão de Identidades e Acessos (IAM)** e
 
 O foco não é apenas configurar: é compreender **quem solicita**, **quem aprova**, **qual permissão é necessária**, **como conceder** e **como validar ou revogar** o acesso conforme o princípio do menor privilégio (*Least Privilege*).
 
+<br>
+<br>
+
+---
+
 ## 🏢 Cenário empresarial
 
 Uma organização fictícia possui usuários distribuídos entre **TI, Financeiro e RH**. A equipe IAM precisa administrar identidades no Active Directory, controlar acesso a pastas e aplicar políticas de segurança aos computadores do domínio.
 
 **Exemplo de chamado:** admitir a colaboradora Ana Silva no Financeiro, criar sua conta, associar grupos, configurar sua pasta pessoal, restringir horários de logon e comprovar que ela **não acessa** arquivos do RH.
+
+<br>
+<br>
+
+---
 
 ## 🧩 Arquitetura do laboratório
 
@@ -36,6 +46,11 @@ Uma organização fictícia possui usuários distribuídos entre **TI, Financeir
 |---|---|---|---|
 | DC01 | Windows Server | AD DS, DNS e GPO | `10.10.10.2` |
 | CLI01 | Windows 11 Pro | Cliente ingressado no domínio e testes | `10.10.10.10` |
+
+<br>
+<br>
+
+---
 
 
 ## 📚 Trilha prática
@@ -55,6 +70,11 @@ Uma organização fictícia possui usuários distribuídos entre **TI, Financeir
 
 > Atualize a coluna **Situação** e as evidências à medida que executar os exercícios.
 
+<br>
+<br>
+
+---
+
 ## 🔐 Controles IAM demonstrados
 
 - **Authentication (AuthN):** verificação da identidade de quem tenta entrar no ambiente.
@@ -65,6 +85,11 @@ Uma organização fictícia possui usuários distribuídos entre **TI, Financeir
 - **Access Review:** conferência periódica de acessos concedidos.
 - **Audit Trail:** registros e evidências para rastreabilidade das operações.
 
+<br>
+<br>
+
+---
+
 ## 🧪 Modelo de execução de cada laboratório
 
 1. **Teoria:** conceitos, termos e riscos que o controle procura reduzir.
@@ -74,6 +99,11 @@ Uma organização fictícia possui usuários distribuídos entre **TI, Financeir
 5. **Teste negativo:** confirmar que o acesso não autorizado é recusado.
 6. **Evidências:** salvar capturas de tela anonimizadas e observações.
 7. **Conclusão:** documentar o que foi configurado e o que ainda pode ser melhorado.
+
+<br>
+<br>
+
+---
 
 ## 🗂️ Estrutura
 
@@ -101,6 +131,11 @@ enterprise-iam-active-directory-lab/
     └── testes/
 ```
 
+<br>
+<br>
+
+---
+
 ## 🖥️ Pré-requisitos
 
 - Laboratório isolado com Windows Server (AD DS/DNS), um cliente Windows ingressado no domínio e PowerShell.
@@ -108,11 +143,21 @@ enterprise-iam-active-directory-lab/
 - Módulo `ActiveDirectory` (RSAT/AD DS) para executar os scripts de consulta.
 - Antes de mudanças significativas, registrar o estado atual e ter um mecanismo de restauração.
 
+<br>
+<br>
+
+---
+
 ## 📸 Evidências e segurança
 
 Registre imagens de criação de usuários/grupos, saída de consultas, aplicação de GPO (`gpresult`) e testes de acesso permitido/negado. **Nunca publique senhas, tokens, chaves, arquivos de configuração sensíveis ou dados reais de funcionários.** Utilize apenas contas fictícias e revise as capturas antes de enviar ao GitHub.
 
 Os scripts fornecidos inicialmente são **somente leitura**, para estudo e inventário. Alterações de contas ou permissões devem seguir um chamado autorizado e ser testadas em laboratório.
+
+<br>
+<br>
+
+---
 
 ## 📖 Documentação de apoio
 
