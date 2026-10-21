@@ -182,4 +182,4 @@ Os scripts fornecidos inicialmente são **somente leitura**, para estudo e inven
 
 Agradeço ao **Higor Louback (Security Specialist na DXC Technology)** pela indicação dos materiais de estudo e pelo incentivo ao desenvolvimento dos meus conhecimentos em Gestão de Identidades e Acessos (IAM).
 
-As orientações e os conteúdos compartilhados foram fundamentais para a criação deste laboratório, permitindo transformar o aprendizado teórico em experiências práticas.
+> As orientações e os conteúdos compartilhados foram fundamentais para a criação deste laboratório, permitindo transformar o aprendizado teórico em experiências práticas.
