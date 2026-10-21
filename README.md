@@ -8,10 +8,9 @@
 ![Nível](https://img.shields.io/badge/n%C3%ADvel-j%C3%BAnior-brightgreen)
 
 <br>
+<br>
 
 ---
-
-<br>
 
 ## 🎯 Objetivo
 
