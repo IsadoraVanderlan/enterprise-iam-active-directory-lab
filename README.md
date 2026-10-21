@@ -7,6 +7,12 @@
 ![Ambiente](https://img.shields.io/badge/ambiente-Windows%20Server-0078D4)
 ![Nível](https://img.shields.io/badge/n%C3%ADvel-j%C3%BAnior-brightgreen)
 
+<br>
+
+---
+
+<br>
+
 ## 🎯 Objetivo
 
 Simular a rotina de uma **Analista de Gestão de Identidades e Acessos (IAM)** em uma empresa fictícia, executando solicitações de criação, alteração, restrição e revogação de acessos. Cada laboratório conecta **conceitos técnicos**, **configurações práticas**, **testes de autorização** e **evidências**.
