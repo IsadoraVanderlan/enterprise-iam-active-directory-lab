@@ -21,19 +21,7 @@ Uma organização fictícia possui usuários distribuídos entre **TI, Financeir
 
 ## 🧩 Arquitetura do laboratório
 
-```mermaid
-flowchart TB
-    IAM[Analista IAM<br/>Solicitação e validação]
-    DC[DC01 — Windows Server<br/>AD DS • DNS • GPO]
-    W11[CLI01 — Windows 11<br/>Logon • Testes de GPO]
-    FS[Compartilhamentos SMB<br/>Pastas pessoais • ACL/NTFS]
-    IAM -->|Provisionar / revisar| DC
-    W11 <-->|Autenticação / diretivas| DC
-    W11 <-->|Acesso autorizado| FS
-    DC -.->|Grupos de segurança| FS
-```
-
-> **Escopo dos vídeos:** criação de usuários e grupos no AD; pasta base; introdução às GPOs; horários de logon; papel de parede e tela de bloqueio; bloqueio de armazenamento USB. O Lab 07 (PowerShell) é um complemento prático para a função de IAM Júnior, não um assunto explicitamente solicitado nos vídeos.
+![Arquitetura do Laboratório IAM com Active Directory](evidencias/img/arquitetura-iam.png)
 
 > **Nota sobre o ambiente:** para economizar recursos no laboratório, os compartilhamentos podem ficar no DC01. Em ambientes corporativos, recomenda-se separar a função de servidor de arquivos do controlador de domínio.
 
@@ -44,11 +32,10 @@ flowchart TB
 | DC01 | Windows Server | AD DS, DNS e GPO | `10.10.10.2` |
 | CLI01 | Windows 11 Pro | Cliente ingressado no domínio e testes | `10.10.10.10` |
 
-**Domínio do laboratório:** `lab.local` (domínio de teste já existente; não recomendado como padrão para uma implantação corporativa nova).
 
 ## 📚 Trilha prática
 
-**Escopo:** exclusivamente Active Directory, Windows Server, Windows 11, permissões NTFS, GPO e consultas PowerShell. Não inclui Linux.
+**Escopo:** exclusivamente Active Directory, Windows Server, Windows 11, permissões NTFS, GPO e consultas PowerShell.
 
 
 | Lab | Tema | Termos e conceitos | Situação |
@@ -61,7 +48,7 @@ flowchart TB
 | [06](labs/06-device-control/README.md) | Controle de USB | Device Control, Removable Storage | ⬜ Não iniciado |
 | [07](labs/07-powershell-automation/README.md) | Consultas e automação | PowerShell, Access Review, Audit | ⬜ Não iniciado |
 
-> Atualize a coluna **Situação** e as evidências à medida que executar os exercícios. Nenhum teste está declarado como concluído neste repositório inicial.
+> Atualize a coluna **Situação** e as evidências à medida que executar os exercícios.
 
 ## 🔐 Controles IAM demonstrados
 
