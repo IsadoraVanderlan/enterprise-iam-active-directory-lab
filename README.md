@@ -166,6 +166,20 @@ Os scripts fornecidos inicialmente são **somente leitura**, para estudo e inven
 - [Modelo de chamados fictícios](docs/modelos-de-chamados.md)
 - [Plano de testes e evidências](docs/plano-de-testes.md)
 
+<br>
+<br>
+
 ---
 
 **Projeto educacional de portfólio.** Ambiente fictício e procedimentos destinados a um laboratório autorizado. Não representa infraestrutura ou políticas internas de qualquer empregador.
+
+<br>
+<br>
+
+---
+
+## 💙 Agradecimentos
+
+Agradeço ao **Higor Louback (Security Specialist na DXC Technology)** pela indicação dos materiais de estudo e pelo incentivo ao desenvolvimento dos meus conhecimentos em Gestão de Identidades e Acessos (IAM).
+
+As orientações e os conteúdos compartilhados foram fundamentais para a criação deste laboratório, permitindo transformar o aprendizado teórico em experiências práticas.
