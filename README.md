@@ -33,6 +33,8 @@ flowchart TB
     DC -.->|Grupos de segurança| FS
 ```
 
+> **Escopo dos vídeos:** criação de usuários e grupos no AD; pasta base; introdução às GPOs; horários de logon; papel de parede e tela de bloqueio; bloqueio de armazenamento USB. O Lab 07 (PowerShell) é um complemento prático para a função de IAM Júnior, não um assunto explicitamente solicitado nos vídeos.
+
 > **Nota sobre o ambiente:** para economizar recursos no laboratório, os compartilhamentos podem ficar no DC01. Em ambientes corporativos, recomenda-se separar a função de servidor de arquivos do controlador de domínio.
 
 ### Infraestrutura utilizada
@@ -41,19 +43,20 @@ flowchart TB
 |---|---|---|---|
 | DC01 | Windows Server | AD DS, DNS e GPO | `10.10.10.2` |
 | CLI01 | Windows 11 Pro | Cliente ingressado no domínio e testes | `10.10.10.10` |
-| DEBIAN01 | Debian | Extensão opcional para integração Linux | `10.10.10.30` |
-| ROCKY01 | Rocky Linux | Extensão opcional para integração Linux | `10.10.10.40` |
 
 **Domínio do laboratório:** `lab.local` (domínio de teste já existente; não recomendado como padrão para uma implantação corporativa nova).
 
 ## 📚 Trilha prática
+
+**Escopo:** exclusivamente Active Directory, Windows Server, Windows 11, permissões NTFS, GPO e consultas PowerShell. Não inclui Linux.
+
 
 | Lab | Tema | Termos e conceitos | Situação |
 |---|---|---|---|
 | [01](labs/01-identity-lifecycle/README.md) | Ciclo de vida de identidades | JML, Provisioning, Deprovisioning | ⬜ Não iniciado |
 | [02](labs/02-group-management/README.md) | Grupos e autorizações | RBAC, AGDLP, Least Privilege | ⬜ Não iniciado |
 | [03](labs/03-file-permissions/README.md) | Pastas e permissões | SMB, ACL, NTFS, Home Directory | ⬜ Não iniciado |
-| [04](labs/04-group-policy/README.md) | Políticas de segurança | GPO, OU, Security Filtering | ⬜ Não iniciado |
+| [04](labs/04-group-policy/README.md) | GPOs, papel de parede e tela de bloqueio | GPO, OU, Security Filtering | ⬜ Não iniciado |
 | [05](labs/05-logon-restrictions/README.md) | Horário de logon | Logon Hours, Access Restrictions | ⬜ Não iniciado |
 | [06](labs/06-device-control/README.md) | Controle de USB | Device Control, Removable Storage | ⬜ Não iniciado |
 | [07](labs/07-powershell-automation/README.md) | Consultas e automação | PowerShell, Access Review, Audit | ⬜ Não iniciado |
@@ -125,13 +128,6 @@ Os scripts fornecidos inicialmente são **somente leitura**, para estudo e inven
 - [Glossário dos principais conceitos IAM](docs/glossario-iam.md)
 - [Modelo de chamados fictícios](docs/modelos-de-chamados.md)
 - [Plano de testes e evidências](docs/plano-de-testes.md)
-
-## 🚀 Próximos passos
-
-1. Confirmar o funcionamento do DC01 e do CLI01.
-2. Executar o [Lab 01 — Ciclo de Vida de Identidades](labs/01-identity-lifecycle/README.md).
-3. Adicionar capturas de tela e resultados reais de cada etapa.
-4. Atualizar o progresso da trilha e registrar as lições aprendidas.
 
 ---
 
