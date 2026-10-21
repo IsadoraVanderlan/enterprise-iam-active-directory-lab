@@ -1,0 +1,19 @@
+# Não versionar segredos e arquivos de VM
+*.pfx
+*.p12
+*.key
+*.pem
+*.kdbx
+*.vhd
+*.vhdx
+*.vmdk
+*.vdi
+*.iso
+*.bak
+*.zip
+*.7z
+.env
+.env.*
+!*.example
+Thumbs.db
+.DS_Store
